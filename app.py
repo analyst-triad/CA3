@@ -22,11 +22,12 @@ def multiply(x,y):
 @app.route("/calc/sub/<x>")
 def sub(x):
     return str(int(x) - 3)
-  
+
+#Add Func
 @app.route("/calc/add/<x>/<y>")
 def add(x,y):
     return str(int(x) + int(y))
-
+    
 def div(x,y):
     if y == 0:
         return "Undefined (division by zero)"
