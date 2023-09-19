@@ -1,2 +1,2 @@
-# CA3
-Class Activity 3
+# ClassTask
+MLOps Class Task
