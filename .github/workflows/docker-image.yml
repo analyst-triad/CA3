@@ -17,7 +17,7 @@ jobs:
       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t <dockerhubaccount>/CA3:latest .
+      run: docker build -t analysts/ca3:latest .
 
     - name: Push Docker image to Docker Hub
-      run: docker push <dockerhubaccount>/CA3:latest
+      run: docker push analysts/ca3:latest
