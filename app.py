@@ -4,12 +4,15 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Home"
+    return "Home, got the /calc/func to run"
 
+@app.route("/calc/square/<x>")
 #Square function
 def square(x):
     
     return x * x
+
+@app.route("/calc/multiply/<x>/<y>")
 #Multiply Func
 def multiply(x,y):
     
