@@ -22,9 +22,8 @@ def multiply(x,y):
 @app.route("/calc/sub/<x>")
 def sub(x):
     return str(int(x) - 3)
+  
 
-#Add Func
-@app.route("/calc/add/<x>/<y>")
 def add(x,y):
     return str(int(x)+int(y))
 
@@ -32,7 +31,7 @@ def add(x,y):
 def div(x,y):
     if int(y) == 0:
         return "Undefined (division by zero)"
-    return str(int(x) / int(y))
+    return str(int(int(x) / int(y)))
 @app.route("/calc/mod/<x>/<y>")
 def mod(x, y):
     """Calculate the modulus (remainder) of two numbers."""
