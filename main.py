@@ -27,5 +27,7 @@ def add(x,y):
     return str(x+y)
 
 def div(x,y):
-    return x/y
+    if y == 0:
+        return "Undefined (division by zero)"
+    return x / y
 
