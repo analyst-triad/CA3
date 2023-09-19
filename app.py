@@ -17,7 +17,7 @@ def square(x):
 #Multiply Func
 def multiply(x,y):
     
-    return str(int(x) * (y))
+    return str(int(x) * int(y))
 
 @app.route("/calc/sub/<x>")
 def sub(x):
@@ -26,15 +26,16 @@ def sub(x):
 #Add Func
 @app.route("/calc/add/<x>/<y>")
 def add(x,y):
-    return str(int(x) + int(y))
-    
-def div(x,y):
-    if y == 0:
-        return "Undefined (division by zero)"
-    return x / y
+    return x+y
 
+@app.route("/calc/div/<x>/<y>")
+def div(x,y):
+    if int(y) == 0:
+        return "Undefined (division by zero)"
+    return str(int(x) / int(y))
+@app.route("/calc/mod/<x>/<y>")
 def mod(x, y):
     """Calculate the modulus (remainder) of two numbers."""
-    if y == 0:
+    if int(y) == 0:
         return "Cannot divide by zero"
-    return x % y
+    return str(int(x) % int(y))
