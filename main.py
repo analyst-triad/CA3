@@ -1,8 +1,8 @@
+#Square function
 def square(x):
     
     return x * x
-
-
+#Multiply Func
 def multiply(x,y):
     
     return x * y
