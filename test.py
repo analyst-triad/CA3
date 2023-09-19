@@ -6,7 +6,7 @@ def test_square():
 def test_sub():
     assert "1" == sub(4)
 def test_div():
-    assert "2" == div(4,2)
+    assert "2.0" == div(4,2)
 def test_multiply():
     assert "4" == multiply(2,2)
     
