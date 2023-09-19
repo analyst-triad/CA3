@@ -26,3 +26,8 @@ def div(x,y):
         return "Undefined (division by zero)"
     return x / y
 
+def mod(x, y):
+    """Calculate the modulus (remainder) of two numbers."""
+    if y == 0:
+        return "Cannot divide by zero"
+    return x % y
