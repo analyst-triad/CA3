@@ -19,12 +19,16 @@ def multiply(x,y):
     
     return str(int(x) * (y))
 
+#Subtract Func
+@app.route("/calc/sub/<x>")
 def sub(x):
-    return x - 3
-  
-def add(x,y):
-    return x+y
+    return str(int(x) - 3)
 
+#Add Func
+@app.route("/calc/add/<x>/<y>")
+def add(x,y):
+    return str(int(x) + int(y))
+    
 def div(x,y):
     if y == 0:
         return "Undefined (division by zero)"
