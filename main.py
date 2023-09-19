@@ -10,16 +10,21 @@ def home():
 def square(x):
     
     return x * x
+
 #Multiply Func
 def multiply(x,y):
     
     return x * y
 
+#Subtract Func
+@app.route('/calc/sub/<x>/<y>')
 def sub(x):
-    return x - 3
-  
+    return str(x - 3)
+
+#Subtract Func
+@app.route('/calc/add/<x>/<y>')
 def add(x,y):
-    return x+y
+    return str(x+y)
 
 def div(x,y):
     return x/y
