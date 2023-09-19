@@ -19,11 +19,13 @@ def multiply(x,y):
     
     return str(int(x) * int(y))
 
+@app.route("/calc/sub/<x>")
 def sub(x):
-    return str(x - 3)
+    return str(int(x) - 3)
   
+
 def add(x,y):
-    return x+y
+    return str(int(x)+int(y))
 
 @app.route("/calc/div/<x>/<y>")
 def div(x,y):
