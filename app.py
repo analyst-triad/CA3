@@ -26,7 +26,7 @@ def sub(x):
 #Add Func
 @app.route("/calc/add/<x>/<y>")
 def add(x,y):
-    return x+y
+    return str(int(x)+int(y))
 
 @app.route("/calc/div/<x>/<y>")
 def div(x,y):
