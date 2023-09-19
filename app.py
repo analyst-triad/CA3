@@ -10,13 +10,13 @@ def home():
 #Square function
 def square(x):
     
-    return x * x
+    return str(int(x) * int(x))
 
 @app.route("/calc/multiply/<x>/<y>")
 #Multiply Func
 def multiply(x,y):
     
-    return x * y
+    return str(int(x) * (y))
 
 def sub(x):
     return x - 3

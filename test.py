@@ -1,4 +1,4 @@
-from main import square, sub, div
+from app import square, sub, div
 
 def test_square():
     assert 4 == square(2)
