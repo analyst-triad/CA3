@@ -20,7 +20,7 @@ def multiply(x,y):
     return str(int(x) * int(y))
 
 def sub(x):
-    return x - 3
+    return str(x - 3)
   
 def add(x,y):
     return x+y
@@ -29,7 +29,7 @@ def add(x,y):
 def div(x,y):
     if int(y) == 0:
         return "Undefined (division by zero)"
-    return str(int(x) / int(y))
+    return str(int(int(x) / int(y)))
 @app.route("/calc/mod/<x>/<y>")
 def mod(x, y):
     """Calculate the modulus (remainder) of two numbers."""
