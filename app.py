@@ -12,6 +12,7 @@ def square(x):
     
     return str(int(x) * int(x))
 
+#Sr
 @app.route("/calc/multiply/<x>/<y>")
 #Multiply Func
 def multiply(x,y):
